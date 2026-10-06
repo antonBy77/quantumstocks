@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-10-06T09:51:48.418Z",
+  "sessionId": "sess_2de921cb-8a90-4727-8e01-2b4453f7763f",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "/home/user/.zcode/cli/memories/projects/default-28b41f93bb9491a5/memory/quantumstocks-plugin.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 5,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}

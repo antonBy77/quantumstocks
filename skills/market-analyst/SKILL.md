@@ -23,7 +23,7 @@ description: Рыночный пульс QuantumStocks — общая карти
 2. **Снимок рынка**: `fast_snapshot` (37 инструментов, Fear & Greed, intermarket, sector rotation — из Redis, TTL 5м). Если висит/таймаут → фолбэк `get_enhanced_market_snapshot` (то же, но из COMPUTE, медленнее).
 3. **Сигналы**: `fast_signals` — multi-signal confluence по всем тикерам (7 источников: HMM × SMC × ML × Tech × GEX × VWAP; обновляется шедулером каждые 45м). Фильтры: `verdict` (BUY/SELL/HOLD), `min_confluence` (0–1), `limit`. Для сигнала по одному тикеру есть тяжёлый `analytics_signals(ticker)`.
 4. **Беты/корреляции**: `fast_beta_ranking` (беты к SPY) или `fast_correlation_map` (матрица + топ-пары |corr|>0.3).
-5. **Экономкалендарь**: `fast_economic_calendar` — что сегодня/на неделе; `high_only=true` только важное, `country` для фильтра.
+5. **Экономкалендарь**: `fast_economic_calendar` — что сегодня/на неделе; `high_only=true` только важное, `country` — код валюты (`"USD"`, не `"US"` — иначе пустой список).
 6. **Новости**: `get_global_market_news` (глобальный брифинг Markdown: Redis livesquawk → файловый кэш blogspot). Часто медленный — ставить последним; при таймауте → `get_rss_sources` + `fast_news(source)` по 1–2 ключевым источникам.
 7. **Режим рынка (опционально)**: `get_hmm_regime(ticker="SPY")` — HMM-детекция режима (бычий/медвежий/боковой из n_states=5).
 

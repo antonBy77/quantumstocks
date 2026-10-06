@@ -15,7 +15,7 @@ description: Макро-контекст через QuantumStock MCP (QSmcp) —
 
 ## Экономический календарь
 
-`fast_economic_calendar` — из Redis (Forex Factory). Фильтры: `high_only=true` (только high-impact), `country="US"` (или другая), `refresh=true` принудительно обновить, `limit`. Всегда показывать: что вышло сегодня (факт vs прогноз) и что ждёт на ближайшие дни.
+`fast_economic_calendar` — из Redis (Forex Factory). Фильтры: `high_only=true` (только high-impact), `country="USD"` — **фильтр принимает код валюты, а не страны** (в данных `USD`/`JPY`/`EUR`/`All`; значение `"US"` молча вернёт пустой список), `refresh=true` принудительно обновить, `limit`. Всегда показывать: что вышло сегодня (факт vs прогноз) и что ждёт на ближайшие дни.
 
 ## Индикаторы из блогов (CDS / VIX / GDPNow / FedOdds)
 

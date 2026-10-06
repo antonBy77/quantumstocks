@@ -4,7 +4,7 @@
     {
       "name": "quantumstocks",
       "source": "./",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Аналитика рынка через QuantumStock MCP: рыночные снимки и confluence-сигналы, фундаментал и скоринг компаний, теханализ, Smart Money Concepts, HMM-режимы, ML-прогнозы (LSTM ансамбль), опционы и GEX, макро-данные FRED, RSS-новости.",
       "displayName": "QuantumStocks",
       "category": "finance"
