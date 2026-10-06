@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "QSmcp": {
+      "type": "http",
+      "url": "https://mcp-antonbustrov.waw0.amvera.tech/mcp",
+      "headers": {
+        "Authorization": "Bearer ${QS_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
